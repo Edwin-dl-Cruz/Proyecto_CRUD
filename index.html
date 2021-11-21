@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CRUD demo js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <footer class="bg-light text-center text-lg-start footer">
+        <div class="text-center p-3 " style="background-color: #6C63FF;">
+            <h1 class="text_footer">Registro de Alumnos</h1>
+        </div>
+    </footer>
+    <section class="form_container header ">
+        <div class="registry_container ">
+            <div class="mensaje-alerta">
+            </div>
+
+            <div class=" ">
+                <h2 class="registry_title"> Ingersar Datos </h2>
+
+
+                <div class="col-md-6">
+                    <hr>
+                    <p class="modo"> <span class="glyphicon glyphicon-plus"></span>Agregar Registro</p>
+                    <form id="Registros-form">
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresar Nombre"
+                            class="form-control registry_input" />
+
+                        <input type="email" name="correo" id="correo" placeholder="Ingresar Correo"
+                            class="form-control registry_input" />
+
+                        <input type="number" name="edad" id="edad" placeholder="Edad" min="18" max="100"
+                            class="form-control registry_input" />
+
+                        <input type="text" name="direccion" id="direccion" placeholder="Direccion"
+                            class="form-control registry_input" />
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Curso</label>
+                            <select class="form-control" id="curso">
+                                <option value="frontend">Front End</option>
+                                <option value="backend">Backend</option>
+                                <option value="fullstack">Full Stack</option>
+                                <option value="diseño">Diseño UX/UI</option>
+                            </select>
+                        </div>
+                        <br>
+                        <input type="submit" class="btn btn-success" value="Guardar">
+                    </form>
+                </div>
+                <div class="background"></div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <div id="numeroRegistros">
+
+    </div>
+    </div>
+    <br><br>
+    <table class="table" id="dbRegistros-list">
+
+    </table>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+         <p>© 2020 Derechos reservados de autor : Edwin de la Cruz Marquez</p>
+
+        </div>
+        
+      </footer>
+</body>
+
+</html>
